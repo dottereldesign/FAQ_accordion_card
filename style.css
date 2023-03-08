@@ -150,6 +150,12 @@ h2 {
   margin-bottom: 24px;
 }
 
+.faq_cta {
+  border-bottom: 1px solid rgb(184, 184, 184, 0.5);
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+}
+
 .faq_cta-question {
   display: flex;
   justify-content: space-between;
@@ -159,7 +165,11 @@ h2 {
 .faq_cta-question p {
   color: var(--clr-primary-100);
   font-size: var(--fs-500);
-  font-weight: var(--fw-regular);
+  font-weight: var(--fw-medium);
+}
+
+.faq_cta-answer p {
+  margin-top: 8px;
 }
 
 .faq_cta-question img {
