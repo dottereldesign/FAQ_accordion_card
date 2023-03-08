@@ -100,20 +100,69 @@ select {
   font-family: var(--ff-primary-100);
 }
 
+body {
+  padding: 16px;
+  background-color: blueviolet;
+}
+
+article {
+  padding: 0 24px 32px 24px;
+  border-radius: 25px;
+  background-color: white;
+  position: relative;
+
+  max-width: 450px;
+  margin: 150px auto 0 auto;
+}
+
+article picture {
+  position: absolute;
+  top: -110px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 240px;
+  height: auto;
+  z-index: 200;
+}
+
+article::after {
+  content: url(images/bg-pattern-mobile.svg);
+  position: absolute;
+  border-radius: 10px;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 240px;
+  height: 104px;
+}
+
 h2 {
   color: var(--clr-primary-100);
   font-size: var(--fs-800);
   font-weight: var(--fw-bold);
   text-align: center;
-  margin-top: 32px;
+  padding-top: 120px;
+  margin-bottom: 24px;
 }
 
 .faq_cta-question {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.faq_cta-question p {
+  color: var(--clr-primary-100);
+  font-size: var(--fs-500);
+  font-weight: var(--fw-regular);
 }
 
 .faq_cta-question img {
-  width: 5px;
-  height: 5px;
+  width: 20px;
+  height: 14px;
 }
